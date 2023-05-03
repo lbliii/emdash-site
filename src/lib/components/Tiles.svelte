@@ -2,7 +2,7 @@
 <div class="flex flex-col lg:flex-row justify-center lg:justify-between">
 <a class="card card-hover variant-ghost-surface m-2 lg:-mt-28" href="/">
     <div class="card-header flex justify-center p-4">
-        <h2>Wireframes</h2>
+        <h2>Site Designs</h2>
     </div>
     <div class="card-body p-4">
         <p>Before we start designing a website or app, we create wireframes that outline the structure and layout of each page. Our wireframes help to establish a clear design direction and ensure that all stakeholders are aligned before we begin the full design process. We use a combination of sketches, digital tools, and client feedback to create wireframes that accurately reflect the project's requirements. </p>
@@ -38,7 +38,7 @@
 
 <a class="card card-hover variant-ghost-surface m-2 lg:-mt-28" href="/">
     <div class="card-header flex justify-center p-4">
-        <h2>Site & App Designs</h2>
+        <h2>App Designs</h2>
     </div>
     <div class="card-body p-4">
         <p>Our team specializes in designing visually stunning and highly functional websites and mobile apps. We work with you to understand your project's requirements and goals, and we create custom designs that align with your brand's visual identity. We use the latest design tools and techniques to create sites and apps that are optimized for user experience and performance. Whether you need a complete redesign or a new site or app from scratch, we're here to help.</p>
