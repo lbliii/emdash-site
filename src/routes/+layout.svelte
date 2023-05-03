@@ -15,10 +15,16 @@
 
 <AppShell>
 	<svelte:fragment slot="header">
-		<AppBar gridColumns="grid-cols-3" slotDefault="place-self-center" slotTrail="place-content-end">
+		<AppBar gridColumns="grid-cols-3" slotDefault="place-self-center" slotTrail="place-content-end" class="px-10">
 
 		<svelte:fragment slot="lead">
-			<div class="font-black emdash">Emdash</div>
+			<div class="flex flex-row space-x-3" > 
+				
+				<img src="logos/simple-white.svg" alt="" class="w-[32px]">	
+				<div class="font-black emdash">Emdash</div> 
+				
+			</div>
+		
 		</svelte:fragment>
 		<svelte:fragment slot="trail">
 			<button type="button" class="btn variant-filled-tertiary px-20 border-b-4 border-tertiary-700 font-black">Contact</button>
