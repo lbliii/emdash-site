@@ -57,8 +57,8 @@
 			link: '/',
 			description: 'Learn more about how Emdash works and how we can help you.',
 			cta: 'Contact',
-			cta_btn_color: 'variant-ghost-surface',
-			cta_btn_border: 'border-surface-500',
+			cta_btn_color: 'variant-ghost-tertiary',
+			cta_btn_border: 'border-tertiary-500',
 			highlight: true
 		}
 	];
@@ -90,7 +90,7 @@
 				</div>
 				<button
 					type="button"
-					class="btn border-b-4 {cta_btn_color} {cta_btn_border} rounded-none font-black"
+					class="btn border-b-4 {cta_btn_color} {cta_btn_border} {highlight? '' : 'rounded-none'} font-black"
 				>
 					{@html cta}</button
 				>

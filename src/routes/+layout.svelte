@@ -11,6 +11,7 @@
 
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
 	import Footer from '$lib/components/Footer.svelte'
+	import NavbarTrail from '$lib/components/NavbarTrail.svelte'
 
 	import { scrollY } from '../lib/stores.js';
 
@@ -36,7 +37,7 @@
 		
 		</svelte:fragment>
 		<svelte:fragment slot="trail">
-			<button type="button" class="btn variant-ghost-tertiary px-20 border-b-4 border-tertiary-700 font-black">Contact</button>
+			<NavbarTrail/>
 			
 		</svelte:fragment>
 		</AppBar>

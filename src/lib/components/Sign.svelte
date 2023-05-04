@@ -32,7 +32,7 @@
 	}
 
 @keyframes flicker {
-  5%, 6%, 7%, 8% {
+  5%, 6% {
     opacity: 0.9;
   }
   90% {

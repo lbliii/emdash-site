@@ -1,5 +1,5 @@
 <script>
-    import { scrollY } from '$lib/stores.ts';
+    import { scrollY } from '$lib/stores';
 
     const showcaseItems = [
         {
@@ -47,20 +47,7 @@
 
     function scrollShowcaseItems(y){
         scrollTransform = y / 10
-
-        console.log(scrollTransform)
-
     }
-
-
-    function scaleItemIn(target) {
-        // target.style.transform = 'scale(1.3)'
-    }
-
-    function scaleItemOut(target) {
-        // target.style.transform = `scale(1)`
-    }
-
     
 </script>
 
