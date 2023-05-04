@@ -67,8 +67,8 @@
 <div id="meow" class="flex flex-col lg:flex-row py-7">
 	{#each offerings as { title, link, description, cta, cta_btn_color, cta_btn_border, rate, highlight }}
 		<a
-			class="card card-hover flex flex-col {highlight
-				? 'variant-ghost-success'
+			class="card card-hover flex flex-col space-y-4  py-4 {highlight
+				? 'variant-ringed-success'
 				: 'variant-ghost-surface'} m-2 lg:w-3/12"
 			href={link}
             on:click={handleAnchorClick}
@@ -79,7 +79,7 @@
 			<div class="card-body p-4">
 				<div class="text-lg text-center">{@html description}</div>
 			</div>
-			<div class="card-footer flex flex-col flex-grow justify-end p-4 space-y-4">
+			<div class="card-footer flex flex-col flex-grow justify-end p-4 space-y-8">
 				<div class="flex flex-row justify-center items-end space-x-1">
 					{#if rate}
 						<div class="text-4xl font-black mt-4">
