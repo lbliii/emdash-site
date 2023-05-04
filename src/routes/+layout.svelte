@@ -20,7 +20,7 @@
 		<svelte:fragment slot="lead">
 			<div class="flex flex-row space-x-3" > 
 				
-				<img src="logos/simple-white.svg" alt="" class="w-[32px]">	
+				<img src="logos/simple-color.svg" alt="" class="w-[32px]">	
 				<div class="font-black emdash">Emdash</div> 
 				
 			</div>
