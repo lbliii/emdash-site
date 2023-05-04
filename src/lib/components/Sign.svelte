@@ -1,5 +1,5 @@
 
-<div class="h-screen bg-contain bg-no-repeat bg-right" style="background-image: url('computer.png')">
+<div class="h-screen bg-contain bg-no-repeat bg-right" style="background-image: url('/logos/hero.svg')">
   <div class="container ">
     <div class="container pb-11">
         <div id="Sign" class="text-6xl lg:text-8xl font-bold text-success-500 bungee emdash">
