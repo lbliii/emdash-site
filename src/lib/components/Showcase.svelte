@@ -1,4 +1,5 @@
 <script>
+    import { scrollY } from '$lib/stores.ts';
 
     const showcaseItems = [
         {
@@ -39,19 +40,44 @@
         }, 
         
     ]
- 
+
+    let scrollTransform = 0
+    $: y = $scrollY - 2000
+    $: scrollShowcaseItems(y)
+
+    function scrollShowcaseItems(y){
+        scrollTransform = y / 10
+
+        console.log(scrollTransform)
+
+    }
+
+
+    function scaleItemIn(target) {
+        // target.style.transform = 'scale(1.3)'
+    }
+
+    function scaleItemOut(target) {
+        // target.style.transform = `scale(1)`
+    }
+
+    
 </script>
 
 <style>
     .item:hover {
         transform: scale(1.3);
+        transition: transform 0.3s ease;
+
     }
 </style>
 
-<div id="showcase-container" class="container ">
-  <div id="showcase" class="flex flex-row">
-    {#each showcaseItems as {title, link, image, description}}
-      <div class="flex-shrink-0 min-w-min variant-ghost-surface block w-48 h-64 lg:w-72 lg:h-96 bg-contain rounded-md mx-4 item" style="background-image: url('{image}')">
+<div id="showcase-container" class="container max-w-lg">
+  <div id="showcase" class="flex flex-row" style="transform: translateX({scrollTransform}px)">
+    {#each showcaseItems as {title, link, image, description}, index}
+      <div id="showcase-{index}" class="flex-shrink-0 min-w-min variant-ghost-tertiary block w-48 h-64 lg:w-72 lg:h-96 bg-contain rounded-md mx-4 item" 
+      style="background-image: url('{image}');" on:mouseenter={() => scaleItemIn(event.target)}
+      on:mouseleave={() => scaleItemOut(event.target)}>
       </div>
     {/each}
   </div>

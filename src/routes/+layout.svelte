@@ -11,10 +11,18 @@
 
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
 	import Footer from '$lib/components/Footer.svelte'
+
+	import { scrollY } from '../lib/stores.js';
+
+
+	function saveScroll(event) {
+    scrollY.set(event.target.scrollTop);
+
+	}
+
+
 </script>
-
-
-<AppShell>
+<AppShell on:scroll={saveScroll}>
 	<svelte:fragment slot="header">
 		<AppBar gridColumns="grid-cols-3" slotDefault="place-self-center" slotTrail="place-content-end" class="px-10">
 

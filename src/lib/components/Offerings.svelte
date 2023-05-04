@@ -67,7 +67,7 @@
 <div id="meow" class="flex flex-col lg:flex-row py-7">
 	{#each offerings as { title, link, description, cta, cta_btn_color, cta_btn_border, rate, highlight }}
 		<a
-			class="card card-hover flex flex-col space-y-4  py-4 {highlight
+			class="card card-hover flex flex-col space-y-4 py-4 {highlight
 				? 'variant-ringed-success'
 				: 'variant-ghost-surface'} m-2 lg:w-3/12"
 			href={link}
