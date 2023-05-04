@@ -56,9 +56,9 @@
 			title: 'Book a Call',
 			link: '/',
 			description: 'Learn more about how Emdash works and how we can help you.',
-			cta: 'Book',
-			cta_btn_color: 'variant-filled-primary',
-			cta_btn_border: 'border-primary-700',
+			cta: 'Contact',
+			cta_btn_color: 'variant-ghost-surface',
+			cta_btn_border: 'border-surface-500',
 			highlight: true
 		}
 	];

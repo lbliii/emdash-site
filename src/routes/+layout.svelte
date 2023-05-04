@@ -36,7 +36,7 @@
 		
 		</svelte:fragment>
 		<svelte:fragment slot="trail">
-			<button type="button" class="btn variant-filled-tertiary px-20 border-b-4 border-tertiary-700 font-black">Contact</button>
+			<button type="button" class="btn variant-ghost-tertiary px-20 border-b-4 border-tertiary-700 font-black">Contact</button>
 			
 		</svelte:fragment>
 		</AppBar>
