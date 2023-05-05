@@ -7,9 +7,30 @@
 
     function scrollShowcaseItems(y){
         scrollTransform = y / 10
-
-        console.log(scrollTransform)
     }
 </script>
 
-<button type="button" class="btn btn-sm rounded-3xl variant-ghost-tertiary px-20 border-b-4 border-tertiary-700 font-black {y > 1200 ? 'hidden' :''}">Contact</button>
+<div class="emdash text-md {y > 1550 ? 'hidden' :''} -mr-4">
+{#if y > 100}
+     =
+    {/if}
+    {#if y > 300}
+    =
+    {/if}
+    {#if y > 500}
+    =
+    {/if}
+    {#if y > 700}
+    =
+    {/if}
+    {#if y > 900}
+    =
+    {/if}
+    {#if y > 1100}
+    =
+{/if}
+</div>
+
+<a class="emdash text-md {y > 1550 ? 'hidden' :''} hover:text-primary-500" alt="" href="/contact">
+    ▶︎ Contact
+</a>

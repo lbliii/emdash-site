@@ -2,15 +2,25 @@
 
  </script>
  
- <div class="flex flex-col lg:flex-row justify-between mx-4">
-        <div class="text-xl lg:w-3/12 text-center">
-            Subscribe to a plan & request as many designs as you'd like.
+ <div class="flex flex-col lg:flex-row justify-around mx-4 font-thin text-2xl ">
+        <div class="flex flex-col lg:w-3/12 text-center space-y-4 py-4 justify-center">
+            <div class="text-6xl">🗞️</div>
+            <div> You subscribe. </div>
         </div>
-        <div class="text-xl lg:w-3/12 text-center">
-            Receive your design within a few business days on average, Monday to Friday.
+        <div class="flex flex-col lg:w-3/12 text-center space-y-4 py-4 justify-center">
+            <div class="text-6xl">📭</div>
+            <div> You submit design requests. </div>
         </div>
-        <div class="text-xl lg:w-3/12 text-center">
-            We'll revise the designs until you're 100% satisfied.
-
+        <div class="flex flex-col lg:w-3/12 text-center space-y-4 py-4 justify-center">
+            <div class="text-6xl">📐</div>
+            <div> We'll draft. </div>
+        </div>
+        <div class="flex flex-col lg:w-3/12 text-center space-y-4 py-4 justify-center">
+            <div class="text-6xl">✏️</div>
+            <div> We'll revise. </div>
+        </div>
+        <div class="flex flex-col lg:w-3/12 text-center space-y-4 py-4 justify-center">
+            <div class="text-6xl">🚀</div>
+            <div> We'll hand off! </div>
         </div>
     </div>
