@@ -12,6 +12,7 @@
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
 	import Footer from '$lib/components/Footer.svelte'
 	import NavbarTrail from '$lib/components/NavbarTrail.svelte'
+	import * as config from '$lib/config'
 
 	import { scrollY } from '../lib/stores.js';
 
@@ -23,6 +24,10 @@
 
 
 </script>
+<svelte:head>
+	<title>{config.title}</title>
+</svelte:head>
+
 <AppShell on:scroll={saveScroll}>
 	<svelte:fragment slot="header">
 		<AppBar gridColumns="grid-cols-3" slotDefault="place-self-center" slotTrail="place-content-end" class="px-10">
